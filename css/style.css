@@ -14,9 +14,7 @@ body,
 
 .beerContainer {
     display: inline-block;
-    width: calc(100% * (1/5));
     height: 30%;
-    margin: 20px;
 }
 
 .nameContainer {

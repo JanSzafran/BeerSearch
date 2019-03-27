@@ -70,7 +70,7 @@ function appendData(beers) {
 
 function createBeerContainer() {
     beerContainer = document.createElement('div');
-    beerContainer.classList.add('beerContainer', 'container');
+    beerContainer.classList.add('beerContainer', 'container', 'col-12', 'col-sm-6', 'col-md-4', 'col-lg-3');
     return beerContainer;
 }
 
