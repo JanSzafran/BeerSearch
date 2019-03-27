@@ -1,6 +1,6 @@
 # BeerSearch
 
-App isn't responsive yet, I'm currently working on it.
+Simple beer search app inspired by Netguru recrutation task
 
 <h1>LIVE</h1>
 
