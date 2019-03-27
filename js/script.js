@@ -42,7 +42,7 @@ function loadBeers() {
     .then(response => response.json())
     .then((data => {
         if(data.length === 0) {
-            alert('No more beers to load!');
+            
         } else {
             appendData(data);
         }
