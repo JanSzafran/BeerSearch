@@ -38,7 +38,7 @@ function createEndpoint(abv) {
 }
 
 function loadBeers() {
-    fetch(createEndpoint(createAbvParmeter(abv)))
+    fetch(createEndpoint(createAbvParameter(abv)))
     .then(response => response.json())
     .then((data => {
         if(data.length === 0) {
@@ -102,15 +102,9 @@ function createTagContainer(beer, beerContainer) {
     beerContainer.appendChild(tagContainer);
 }
 
-if (typeof module === "object") {
+if (typeof module === 'object') {
     module.exports = {
-        createAbvParameter,
-        createBeerContainer,
-        createNameContainer,
-        createEndpoint,
-        createTagContainer,
-        createImgContainer,
-        appendData
-    };
+        loadOnStart
+    }
 }
 
