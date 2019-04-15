@@ -1,0 +1,23 @@
+{
+  "name": "beerapi",
+  "version": "1.0.0",
+  "description": "Simple beer search app inspired by Netguru recrutation task",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "jest",
+    "test:unit:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanSzafran/BeerSearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JanSzafran/BeerSearch/issues"
+  },
+  "homepage": "https://github.com/JanSzafran/BeerSearch#readme",
+  "dependencies": {
+    "jest": "^24.5.0"
+  }
+}

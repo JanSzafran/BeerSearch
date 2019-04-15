@@ -18,7 +18,7 @@ function loadNextPageOnScrollBottom() {
     }
 }
 
-function createAbvParmeter(option) {
+function createAbvParameter(option) {
     switch(option) {
         case 1:
             return `&abv_lt=4`
@@ -54,9 +54,6 @@ function loadOnStart() {
     window.addEventListener('scroll', loadNextPageOnScrollBottom);
 }
 
-loadOnStart();
-
-
 function appendData(beers) {
     beers.forEach(beer => {
         const beerContainer = createBeerContainer();
@@ -79,7 +76,7 @@ function createNameContainer(beer, beerContainer) {
     const beerName = document.createElement('span');
     nameContainer.classList.add('nameContainer', 'container');
     beerName.classList.add('beerName');
-    beerName.innerText = beer.name;
+    beerName.textContent = beer.name;
     nameContainer.appendChild(beerName);
     beerContainer.appendChild(nameContainer);
 }
@@ -100,8 +97,20 @@ function createTagContainer(beer, beerContainer) {
     const beerTag = document.createElement('span');
     tagContainer.classList.add('tagContainer', 'container');
     beerTag.classList.add('beerTag');
-    beerTag.innerText = beer.tagline;
+    beerTag.textContent = beer.tagline;
     tagContainer.appendChild(beerTag);
     beerContainer.appendChild(tagContainer);
+}
+
+if (typeof module === "object") {
+    module.exports = {
+        createAbvParameter,
+        createBeerContainer,
+        createNameContainer,
+        createEndpoint,
+        createTagContainer,
+        createImgContainer,
+        appendData
+    };
 }
 
